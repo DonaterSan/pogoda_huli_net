@@ -8,7 +8,7 @@ class WeatherApiClient {
   WeatherApiClient({required this.client, required this.apiKey});
 
   Future<Map<String, dynamic>> fetchWeather(String city) async {
-    final url = Uri.parse('https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric');
+    final url = Uri.parse('https://api.openweathermap.org/data/2.5/weather?q=$city&appid=1aa5b647d599912ba4e5b76500a58d7b&units=metric');
 
     final response = await client.get(url);
 
